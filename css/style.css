@@ -69,3 +69,9 @@ body{
     0%{background-position:0px 0px}
     100%{background-position:1500px 0px}
 }
+
+.pause{
+    animation-play-state: paused !important;
+    -moz-animation-play-state: paused !important;
+    -webkit-animation-play-state: paused !important;
+}
