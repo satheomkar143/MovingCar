@@ -1,0 +1,63 @@
+body{
+    animation: GoBackground 1s linear 0s infinite;
+    -webkit-animation: GoBackground 1s linear 0s infinite;
+    -moz-animation: GoBackground 1s linear 0s infinite;
+
+    background: #000 url(../img/background.jpg) repeat-x 0 0;
+    height: 100%;
+    background-size: cover;
+}
+#container{
+    margin: 300px auto 0;
+    width: 1000px;
+    overflow: hidden;
+}
+#car-body{
+    background: url(../img/car.png) no-repeat;
+    width: 700px;
+    height: 210px;
+    margin: auto;
+    background-size: cover;
+}
+#wheel-front{
+    animation: GoWheel 0.1s linear 0s infinite;
+    -moz-animation: GoWheel 0.1s linear 0s infinite;
+    -webkit-animation: GoWheel 0.1s linear 0s infinite;
+
+    background: url(../img/wheel.png);
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    float: left;
+    margin-left: 225px;
+    margin-top: -110px;
+}
+#wheel-back{
+    animation: GoWheel 0.1s linear 0s infinite;
+    -moz-animation: GoWheel 0.1s linear 0s infinite;
+    -webkit-animation: GoWheel 0.1s linear 0s infinite;
+
+    background: url(../img/wheel.png);
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    float: left;
+    margin-left: 675px;
+    margin-top: -110px;
+}
+@keyframes GoWheel{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(-360deg)}
+}
+@-moz-keyframes GoWheel{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(-360deg)}
+}
+@-webkit-keyframes GoWheel{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(-360deg)}
+}
+@keyframes GoBackground{
+    0%{background-position:0px 0px}
+    100%{background-position:1000px 0px}
+}
